@@ -12,15 +12,6 @@ class BaseModel {
     const response = await fetch(`${this.baseUrl}/${id}`);
     return response.json();
   }
-  //
-  // CountByFilter(filter) {
-  //   return this.model.countDocuments(filter);
-  // }
-  //
-  // IsThere(filter) {
-  //   return this.model.exists(filter);
-  // }
-
   async Create (data) {
     const response = await fetch(this.baseUrl, {
       method: 'POST',
